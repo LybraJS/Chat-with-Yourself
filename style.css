@@ -122,6 +122,14 @@ button:hover {
   padding: 8px;
   border-radius: 8px;
   max-width: 80%;
+  cursor: default;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+#message-box-left:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #message-box-left p {
@@ -135,6 +143,13 @@ button:hover {
   padding: 8px;
   border-radius: 8px;
   max-width: 80%;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+#message-box-right:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #message-box-right p {
