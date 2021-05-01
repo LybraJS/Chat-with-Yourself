@@ -57,6 +57,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
+  transition: all 1s ease-out;
 
   background-color: #fff;
 }
@@ -101,6 +102,7 @@ button:hover {
 #left-message {
   width: 100%;
   /*min-height: 5%;*/
+  max-height: 100%;
   display: flex;
   padding: 16px;
   margin-bottom: 8px;
@@ -122,13 +124,31 @@ button:hover {
   border-radius: 8px;
   max-width: 80%;
   cursor: default;
+  height: 100%;
 
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 #message-box-left:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /*height: calc(100% + 16px);*/
+}
+
+#message-box-left > span {
+  display: flex;
+  justify-content: flex-end;
+  height: 0;
+  width: 100%;
+  font-size: 0px;
+  transition: all 0.1ms ease-in-out;
+}
+#message-box-left:hover > span {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  height: 10%;
+  font-size: 12px;
 }
 
 #message-box-left p {
@@ -142,26 +162,39 @@ button:hover {
   padding: 8px;
   border-radius: 8px;
   max-width: 80%;
-  height: calc(100% + 10px);
-  width: calc(100% + 10px);
+  height: 100%;
 
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 #message-box-right:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  height: calc(100% + 10px);
-  width: calc(100% + 10px);
 }
 
-#message-box-right p {
-  color: rgb(117, 117, 117);
-  word-break: normal;
+#message-box-right > span {
+  display: flex;
+  justify-content: flex-start;
+  height: 0;
+  width: 100%;
+  font-size: 0px;
+  transition: all 0.1ms ease-in-out;
+}
+#message-box-right:hover > span {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+  height: 10%;
+  font-size: 12px;
 }
 
 p {
   font-size: 16px;
+  color: rgb(117, 117, 117);
+}
+
+button {
+  color: rgb(117, 117, 117);
 }
 
 img {
@@ -184,4 +217,13 @@ img {
   background-color: white;
   border-radius: 100px;
   margin-left: 16px;
+}
+
+#time {
+  font-size: 16px;
+  color: rgb(117, 117, 117);
+}
+
+br {
+  display: none;
 }
