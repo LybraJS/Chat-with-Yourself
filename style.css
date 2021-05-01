@@ -100,8 +100,7 @@ button:hover {
 
 #left-message {
   width: 100%;
-  min-height: 5%;
-
+  /*min-height: 5%;*/
   display: flex;
   padding: 16px;
   margin-bottom: 8px;
@@ -109,7 +108,7 @@ button:hover {
 
 #right-message {
   width: 100%;
-  min-height: 5%;
+  /*min-height: 5%;*/
 
   display: flex;
   justify-content: flex-end;
@@ -143,6 +142,8 @@ button:hover {
   padding: 8px;
   border-radius: 8px;
   max-width: 80%;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
 
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.1s ease-in-out;
@@ -150,6 +151,8 @@ button:hover {
 
 #message-box-right:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
 }
 
 #message-box-right p {
