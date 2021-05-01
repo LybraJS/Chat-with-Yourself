@@ -140,7 +140,7 @@ button:hover {
   justify-content: flex-end;
   width: 100%;
   font-size: 0px;
-  transition: all 0.1ms ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 #message-box-left:hover > span {
   display: flex;
@@ -169,6 +169,7 @@ button:hover {
 
 #message-box-right:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  height: 100%;
 }
 
 #message-box-right > span {
@@ -176,7 +177,7 @@ button:hover {
   justify-content: flex-end;
   width: 100%;
   font-size: 0px;
-  transition: all 0.1ms ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 #message-box-right:hover > span {
   display: flex;
