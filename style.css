@@ -109,7 +109,7 @@ button:hover {
 
 #right-message {
   width: 100%;
-  /*min-height: 5%;*/
+  /*min-height: 50px;*/
 
   display: flex;
   justify-content: flex-end;
