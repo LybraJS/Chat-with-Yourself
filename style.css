@@ -80,6 +80,7 @@ input {
   padding-left: 12px;
   margin-bottom: 7px;
   margin-left: 15px;
+  font-size: 16px;
 }
 
 button {
@@ -90,6 +91,7 @@ button {
   margin-right: 15px;
   margin-bottom: 7px;
   margin-left: 15px;
+  font-size: 16px;
 
   background-color: #80cee1;
 }

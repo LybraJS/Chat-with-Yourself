@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Strive Chat</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-    </head>
-    <body>
-        <div id='outer-box'>
-            <div id='chatbox-container'>
-                <div id='chatbox'>
-                    <div id='left-message'>
+let parent = document.querySelector('#chatbox')
+//let leftMessage = document.querySelector('#left-message')
+
+let leftMessage = ` <div id='left-message'>
                         <div id='img-cont-left'>
                             <img src="./assets/P.jpeg"/>
                         </div>
@@ -18,27 +9,29 @@
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
                             <span id="time">9:41 AM</span>   
                         </div>
-                    </div>
-                    <div id='right-message'>
+                    </div>`;
+
+let rightMessage = `<div id='right-message'>
                         <div id='message-box-right'>
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr!</p>
                             <span id="time">9:41 AM</span>   
-
                         </div>
                         <div id='img-cont-right'>
                             <img src="./assets/M.jpeg"/>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div id='footer'>
-                <input placeholder="Message">
-                <button>
-                    Send
-                </button>
+                    </div>`
 
-            </div>
-</div>
-        <script src='script.js'></script>
-    </body>
-</html>
+
+console.log(leftMessage)
+
+function chatMessage() {
+    let inputValue = document.querySelector(input);
+    
+    
+    if (parent.lastChild == rightMessage) {
+        console.log('working!')
+    }
+
+}
+
+console.log(parent.lastChild)
