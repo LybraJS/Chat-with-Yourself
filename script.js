@@ -1,5 +1,6 @@
-let parent = document.querySelector('#chatbox')
-let input = document.querySelector('input')
+let parent = document.querySelector('#chatbox');
+let input = document.querySelector('input');
+let button = document.querySelector("button");
 let switchUser = true;
 const date = new Date();
 
@@ -13,15 +14,7 @@ let leftMessage = ` <div id='left-message'>
                         </div>
                     </div>`;
 
-/* let rightMessage = `<div id='right-message'>
-                        <div id='message-box-right'>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr!</p>
-                            <span id="time">9:41 AM</span>   
-                        </div>
-                        <div id='img-cont-right'>
-                            <img src="./assets/M.jpeg"/>
-                        </div>
-                    </div>` */
+                    
 
 function createMessage() {
 
@@ -47,7 +40,10 @@ function createMessage() {
 }
 
 
+input.addEventListener("keydown", function(event) {
 
-
-/* console.log(parent.lastElementChild.innerHTML)
- */
+if (event.keyCode === 13) {
+  event.preventDefault();
+  button.click();
+}
+});
