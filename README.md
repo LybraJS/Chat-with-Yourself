@@ -1,2 +1,2 @@
 # Strive-Chat-UI
-https://swftr.github.io/Strive-Chat-UI/
+https://swftr.github.io/Chat-with-Yourself/
